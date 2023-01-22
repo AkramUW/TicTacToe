@@ -1,5 +1,4 @@
-## Tuq Junior Developer Application
-## Akram Elsaidy (2B Mathematics) - TicTacToe in Python 
+
 #import modules
 import pygame
 from pygame.locals import *
