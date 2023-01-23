@@ -40,7 +40,7 @@ pygame.display.set_caption('Akram\'s TicTacToe')
 
 ## draw_grid: draws a 3x3 grid on the screen displayed
 ## draw_grid: None -> None
-## Effects: Draws lines on the screen representing the game board
+## Effects: Outputs lines onto the screen
 def draw_grid():
 	# Specifying RGB colors to match resume
 	bg =  (28,60,59)
@@ -143,7 +143,7 @@ def draw_winner(winner):
 	pygame.draw.rect(screen, bg, again_rect)
 	screen.blit(again_img, (screen_width // 2 - 50, screen_height // 2 + 15))
 
-## draw_tie: Check if the game is a tie, and asks user if they'd like to restart
+## draw_tie: Displays to the user that it's a tie, and asks user if they'd like to restart
 ## draw_tie: Int -> None
 ## Effects: Outputs text onto screen
 def draw_tie(winner):
@@ -161,6 +161,7 @@ def draw_tie(winner):
 	
 run = True
 
+# GAME LOOP
 while run:
 	
 	draw_grid()
